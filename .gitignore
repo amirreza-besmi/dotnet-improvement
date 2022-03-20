@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/dotnet-improvement/bin/Debug/net5.0
+/dotnet-improvement/obj/
+.vs/
