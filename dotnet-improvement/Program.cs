@@ -1,11 +1,6 @@
+using dotnet_improvement.Helpers;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace dotnet_improvement
 {
@@ -13,6 +8,7 @@ namespace dotnet_improvement
     {
         public static void Main(string[] args)
         {
+            CoreHelper.StartDelegateProcess();
             CreateHostBuilder(args).Build().Run();
         }
 
