@@ -16,7 +16,7 @@ namespace dotnet_improvement.Helpers
                 orderChanged = false;
                 for (int index = 0; index < lastItemIndex; index++)
                 {
-                    if (index != lastItemIndex && array[index] > array[index + 1])
+                    if (array[index] > array[index + 1])
                     {
                         int currentItem = array[index];
                         array[index] = array[index + 1];
