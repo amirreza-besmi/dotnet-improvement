@@ -9,6 +9,9 @@ namespace dotnet_improvement
         public static void Main(string[] args)
         {
             CoreHelper.StartDelegateProcess();
+            CoreHelper.StartFuncProcess();
+            CoreHelper.StartActionProcess();
+
             CreateHostBuilder(args).Build().Run();
         }
 

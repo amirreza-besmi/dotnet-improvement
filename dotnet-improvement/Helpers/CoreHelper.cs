@@ -31,15 +31,59 @@ namespace dotnet_improvement.Helpers
             }
         }
 
-        public static void RunCalculationMethod(CalcNumberDelegate calcNumberDelegate, int firstNumber, int secondNumber)
+        public static void StartFuncProcess()
+        {
+            Func<int, int, double>[] operations =
+            {
+                Calculator.Add,
+                Calculator.Subtract,
+                Calculator.Multiply,
+                Calculator.Divide
+            };
+
+            for (int operationIndex = 0; operationIndex < operations.Length; operationIndex++)
+            {
+                Console.WriteLine($"Run Operation {operationIndex}");
+                RunCalculationMethodByFunc(operations[operationIndex], 100, 5);
+            }
+        }
+
+        public static void StartActionProcess()
+        {
+            RunCalculationMethodByAction(AddAction, 100, 2);
+        }
+
+        #region Private Methods
+
+        private static void RunCalculationMethod(CalcNumberDelegate calcNumberDelegate, int firstNumber, int secondNumber)
         {
             double result = calcNumberDelegate.Invoke(firstNumber, secondNumber);
             Console.WriteLine($"{firstNumber}, {secondNumber} = {result}");
         }
 
-        public static string GetGreetingText()
+        private static void RunCalculationMethodByFunc(Func<int, int, double> calcNumberFunc,
+                                                      int firstNumber, int secondNumber)
+        {
+            double result = calcNumberFunc.Invoke(firstNumber, secondNumber);
+            Console.WriteLine($"{firstNumber}, {secondNumber} = {result}");
+        }
+
+        private static void RunCalculationMethodByAction(Action<int, int> calcNumberAction,
+                                                         int firstNumber, int secondNumber)
+        {
+            calcNumberAction.Invoke(firstNumber, secondNumber);
+        }
+
+        private static void AddAction(int firstNumber, int secondNumber)
+        {
+            Console.WriteLine($"Add Action Result = {firstNumber + secondNumber}");
+        }
+
+        private static string GetGreetingText()
         {
             return "Hello, Welcome!";
         }
+
+        #endregion
     }
 }
