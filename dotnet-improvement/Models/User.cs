@@ -10,5 +10,15 @@ namespace dotnet_improvement.Models
         public string Name { get; set; }
 
         public decimal CreditAmount { get; set; }
+
+
+        #region == Methods ==
+
+        public static bool Compare(User user1, User user2)
+        {
+            return user1.CreditAmount > user2.CreditAmount;
+        }
+
+        #endregion
     }
 }

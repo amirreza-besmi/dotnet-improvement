@@ -8,7 +8,7 @@ namespace dotnet_improvement
     {
         public static void Main(string[] args)
         {
-            SortTester.StartBubbleSortProcess();
+            SortTester.StartBubbleSortGenericProcess();
 
             CreateHostBuilder(args).Build().Run();
         }
