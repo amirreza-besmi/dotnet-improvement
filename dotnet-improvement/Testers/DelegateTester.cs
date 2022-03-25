@@ -6,6 +6,14 @@ namespace dotnet_improvement.Testers
 {
     public static class DelegateTester
     {
+        public static void StartMultiCastDelegateProcess()
+        {
+            Action<int, int> action = AddAction;
+            action += SumAction;
+
+            action.Invoke(20, 5);
+        }
+
         public static void StartDelegateProcess()
         {
             GetTextDelegate getGreetingTextDelegate = new GetTextDelegate(GetGreetingText);
@@ -72,6 +80,11 @@ namespace dotnet_improvement.Testers
                                                          int firstNumber, int secondNumber)
         {
             calcNumberAction.Invoke(firstNumber, secondNumber);
+        }
+
+        private static void SumAction(int firstNumber, int secondNumber)
+        {
+            Console.WriteLine($"Sum Action Result = {firstNumber + secondNumber}");
         }
 
         private static void AddAction(int firstNumber, int secondNumber)
