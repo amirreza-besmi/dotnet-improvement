@@ -11,7 +11,17 @@ namespace dotnet_improvement.Testers
             Action<int, int> action = AddAction;
             action += SumAction;
 
-            action.Invoke(20, 5);
+            Delegate[] delegates = action.GetInvocationList();
+            foreach (var delegateMethod in delegates)
+            {
+                try
+                {
+                    delegateMethod.DynamicInvoke(20, 5);
+                }
+                catch
+                {
+                }
+            }
         }
 
         public static void StartDelegateProcess()
@@ -89,6 +99,7 @@ namespace dotnet_improvement.Testers
 
         private static void AddAction(int firstNumber, int secondNumber)
         {
+            throw new Exception();
             Console.WriteLine($"Add Action Result = {firstNumber + secondNumber}");
         }
 
