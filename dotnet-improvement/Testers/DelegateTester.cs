@@ -1,10 +1,10 @@
-﻿
+﻿using dotnet_improvement.Helpers;
 using System;
 using static dotnet_improvement.Configs.Delegates;
 
-namespace dotnet_improvement.Helpers
+namespace dotnet_improvement.Testers
 {
-    public static class CoreHelper
+    public static class DelegateTester
     {
         public static void StartDelegateProcess()
         {

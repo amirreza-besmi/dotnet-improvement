@@ -1,4 +1,4 @@
-using dotnet_improvement.Helpers;
+using dotnet_improvement.Testers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
@@ -8,9 +8,7 @@ namespace dotnet_improvement
     {
         public static void Main(string[] args)
         {
-            CoreHelper.StartDelegateProcess();
-            CoreHelper.StartFuncProcess();
-            CoreHelper.StartActionProcess();
+            SortTester.StartBubbleSortProcess();
 
             CreateHostBuilder(args).Build().Run();
         }
