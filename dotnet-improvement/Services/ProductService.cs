@@ -27,7 +27,7 @@ namespace dotnet_improvement.Services
             OnAddProduct();
         }
 
-        // Protected Event Handlers
+        // Protected Event Invokers
         protected virtual void OnAddProduct()
         {
             AddProductEvent?.Invoke();
