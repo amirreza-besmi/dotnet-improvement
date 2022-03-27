@@ -8,7 +8,7 @@ namespace dotnet_improvement
     {
         public static void Main(string[] args)
         {
-            DelegateTester.StartMultiCastDelegateProcess();
+            EventTester.TestAddProductEvent();
 
             CreateHostBuilder(args).Build().Run();
         }
