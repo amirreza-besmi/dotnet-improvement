@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using static dotnet_improvement.Configs.Events;
+using static dotnet_improvement.Configs.Events.GeneralEvents;
 
 namespace dotnet_improvement.Services
 {
