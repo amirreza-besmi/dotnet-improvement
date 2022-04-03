@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            EventTester.TestAddProductEvent();
+            AnonymousMethodTester.TestAnonymousMethod();
 
             CreateHostBuilder(args).Build().Run();
         }
