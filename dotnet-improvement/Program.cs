@@ -1,8 +1,8 @@
-using dotnet_improvement.Testers;
+using dotnet_improvement.Presentation.Testers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace dotnet_improvement
+namespace dotnet_improvement.Presentation
 {
     public class Program
     {

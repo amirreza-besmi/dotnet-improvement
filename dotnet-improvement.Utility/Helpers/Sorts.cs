@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace dotnet_improvement.Helpers
+namespace dotnet_improvement.Utility.Helpers
 {
     public static class Sorts
     {

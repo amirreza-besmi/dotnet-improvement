@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace dotnet_improvement.Models
+namespace dotnet_improvement.Core.Domain.Entities
 {
     public class User
     {

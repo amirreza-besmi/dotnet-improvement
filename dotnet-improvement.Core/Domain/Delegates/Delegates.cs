@@ -1,5 +1,5 @@
 ﻿
-namespace dotnet_improvement.Configs
+namespace dotnet_improvement.Core.Domain.Delegates
 {
     public static class Delegates
     {

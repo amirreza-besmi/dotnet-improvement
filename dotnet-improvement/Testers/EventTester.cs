@@ -1,10 +1,7 @@
-﻿using dotnet_improvement.Services;
+﻿using dotnet_improvement.Core.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace dotnet_improvement.Testers
+namespace dotnet_improvement.Presentation.Testers
 {
     public static class EventTester
     {

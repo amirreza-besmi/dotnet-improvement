@@ -1,9 +1,9 @@
-﻿using dotnet_improvement.Helpers;
-using dotnet_improvement.Models;
+﻿using dotnet_improvement.Core.Domain.Entities;
+using dotnet_improvement.Utility.Helpers;
 using System;
 using System.Collections.Generic;
 
-namespace dotnet_improvement.Testers
+namespace dotnet_improvement.Presentation.Testers
 {
     public static class SortTester
     {
@@ -31,10 +31,10 @@ namespace dotnet_improvement.Testers
 
             List<Product> products = new List<Product>()
             {
-                 new Product { Price = 50000},
-                 new Product { Price = 178000},
-                 new Product { Price = 150},
-                 new Product { Price = 2500},
+                 new Product { Price = 50000 },
+                 new Product { Price = 178000 },
+                 new Product { Price = 150 },
+                 new Product { Price = 2500 },
             };
 
             products.BubbleSort(Product.Compare);

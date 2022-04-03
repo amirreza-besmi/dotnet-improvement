@@ -1,8 +1,8 @@
-﻿using dotnet_improvement.Helpers;
+﻿using dotnet_improvement.Utility.Helpers;
 using System;
-using static dotnet_improvement.Configs.Delegates;
+using static dotnet_improvement.Core.Domain.Delegates.Delegates;
 
-namespace dotnet_improvement.Testers
+namespace dotnet_improvement.Presentation.Testers
 {
     public static class DelegateTester
     {

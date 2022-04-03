@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using dotnet_improvement.Core.Domain.Entities;
+using dotnet_improvement.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using dotnet_improvement.Models;
 
-namespace dotnet_improvement.Controllers
+namespace dotnet_improvement.Presentation.Controllers
 {
     public class ProductsController : Controller
     {

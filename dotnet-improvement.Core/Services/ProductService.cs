@@ -1,7 +1,7 @@
 ﻿using System;
-using static dotnet_improvement.Configs.Events.GeneralEvents;
+using static dotnet_improvement.Core.Domain.Delegates.Delegates;
 
-namespace dotnet_improvement.Services
+namespace dotnet_improvement.Core.Services
 {
     public interface IProductService
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace dotnet_improvement.Configs.Events
+namespace dotnet_improvement.Core.Domain.Events
 {
     public static class GeneralEvents
     {

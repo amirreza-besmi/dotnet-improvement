@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using dotnet_improvement.Core.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace dotnet_improvement.Models
+namespace dotnet_improvement.Infrastructure.Data
 {
     public class ApplicationDbContext : DbContext
     {
