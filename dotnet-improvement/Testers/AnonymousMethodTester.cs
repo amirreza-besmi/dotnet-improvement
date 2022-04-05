@@ -20,6 +20,7 @@ namespace dotnet_improvement.Presentation.Testers
                 {
                     return product.Id == 1;
                 });
+            var firstProduct_with_lamdaExpression = products.Find(x => x.Id == 1);
         }
 
         // Used in C# lower than verion 2
