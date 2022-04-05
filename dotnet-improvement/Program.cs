@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            AnonymousMethodTester.TestAnonymousMethod();
+            LambdaExpressionTester.TestStaticLambdaExpression();
 
             CreateHostBuilder(args).Build().Run();
         }
