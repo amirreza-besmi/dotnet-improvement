@@ -1,4 +1,5 @@
-﻿using System;
+﻿using dotnet_improvement.Core.Domain.Args;
+using System;
 
 namespace dotnet_improvement.Core.Domain.Events
 {
@@ -7,11 +8,11 @@ namespace dotnet_improvement.Core.Domain.Events
         /// <summary>
         /// Will be raised when a user registered.
         /// </summary>
-        /// <param name="source">The object for the raiser class of this event.</param>
+        /// <param name="sender">The object for the raiser class of this event.</param>
         /// <param name="args">
         /// Arguments that is needed for handling this event (for example, email sending & etc).
         /// </param>
-        /// Also <see cref="System.EventHandler"/> can be used./>
-        public delegate void UserRegisteredEventHandler(object source, EventArgs args);
+        /// Also <see cref="UserDataEventArgs"/> can be used./>
+        public delegate void UserRegisteredEventHandler(object sender, UserDataEventArgs args);
     }
 }

@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            LambdaExpressionTester.TestStaticLambdaExpression();
+            UserRegisterTester.TestUserRegister();
 
             CreateHostBuilder(args).Build().Run();
         }

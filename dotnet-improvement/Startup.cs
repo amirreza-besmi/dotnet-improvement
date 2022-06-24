@@ -1,5 +1,7 @@
+using dotnet_improvement.Core.Interfaces;
 using dotnet_improvement.Core.Services;
 using dotnet_improvement.Infrastructure.Data;
+using dotnet_improvement.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,8 @@ namespace dotnet_improvement.Presentation
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
             // Services Injection
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IDiscountService, DiscountService>();
             services.AddScoped<IProductService, ProductService>();
         }
 
