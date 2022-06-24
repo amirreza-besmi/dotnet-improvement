@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            UserRegisterTester.TestUserRegister();
+            UserRegistrationTester.TestUserRegistration();
 
             CreateHostBuilder(args).Build().Run();
         }

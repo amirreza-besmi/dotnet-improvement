@@ -3,7 +3,7 @@ using dotnet_improvement.Infrastructure.Services;
 
 namespace dotnet_improvement.Infrastructure.Handlers
 {
-    public class DiscountHandlerService
+    public class UserDiscountHandlerService
     {
         public void OnUserRegistred(object sender, UserDataEventArgs args)
         {

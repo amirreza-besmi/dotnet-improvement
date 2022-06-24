@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace dotnet_improvement.Presentation.Testers
 {
-    public static class UserRegisterTester
+    public static class UserRegistrationTester
     {
-        public static void TestUserRegister()
+        public static void TestUserRegistration()
         {
             UserService userService = new UserService(); // for test
-            EmailHandlerService emailHandlerService = new EmailHandlerService(); // for test
-            DiscountHandlerService discountHandlerService = new DiscountHandlerService(); // for test
+            UserEmailHandlerService emailHandlerService = new UserEmailHandlerService(); // for test
+            UserDiscountHandlerService discountHandlerService = new UserDiscountHandlerService(); // for test
             userService.UserRegistered += emailHandlerService.OnUserRegistred;
             userService.UserRegistered += discountHandlerService.OnUserRegistred;
             userService.RegisterUser("amirbesmi74@gmail.com");

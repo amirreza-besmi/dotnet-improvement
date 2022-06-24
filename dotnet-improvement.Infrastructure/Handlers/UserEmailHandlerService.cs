@@ -4,7 +4,7 @@ using dotnet_improvement.Infrastructure.Services;
 
 namespace dotnet_improvement.Infrastructure.Handlers
 {
-    public class EmailHandlerService
+    public class UserEmailHandlerService
     {
         public void OnUserRegistred(object sender, UserDataEventArgs args)
         {
