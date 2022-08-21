@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            UserRegistrationTester.TestUserRegistration();
+            TuplesTester.TestTuples();
 
             CreateHostBuilder(args).Build().Run();
         }

@@ -4,6 +4,12 @@ namespace dotnet_improvement.Core.Domain.Entities
 {
     public class Product
     {
+        public Product()
+        {
+        }
+
+        public Product(int id, string name) => (Id, Name) = (id, name);
+
         public int Id { get; set; }
         
         [MaxLength(200)]

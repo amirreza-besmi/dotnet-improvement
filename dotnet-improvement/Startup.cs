@@ -28,10 +28,13 @@ namespace dotnet_improvement.Presentation
             string connectionString = this.Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
+            services.AddMemoryCache();
+
             // Services Injection
             services.AddScoped<IEmailService, EmailService>();
             services.AddScoped<IDiscountService, DiscountService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<INewsService, NewsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
