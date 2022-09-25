@@ -9,7 +9,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            EnumTester.TestEnum();
+            ExceptionTester.TestExceptions();
 
             CreateHostBuilder(args).Build().Run();
         }
