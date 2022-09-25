@@ -1,6 +1,7 @@
 using dotnet_improvement.Presentation.Testers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace dotnet_improvement.Presentation
 {
@@ -8,7 +9,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            ReferenceTester.TestStringReferences();
+            EnumTester.TestEnum();
 
             CreateHostBuilder(args).Build().Run();
         }
