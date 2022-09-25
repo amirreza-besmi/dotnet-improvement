@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            PrivateConstructorTester.TestPrivateConstructor();
+            ReferenceTester.TestStringReferences();
 
             CreateHostBuilder(args).Build().Run();
         }
