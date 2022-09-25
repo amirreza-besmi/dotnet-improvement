@@ -8,7 +8,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            TuplesTester.TestTuples();
+            PrivateConstructorTester.TestPrivateConstructor();
 
             CreateHostBuilder(args).Build().Run();
         }
