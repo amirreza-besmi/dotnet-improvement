@@ -9,7 +9,7 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            ExceptionTester.TestExceptions();
+            HashSetTester.TestHashSet();
 
             CreateHostBuilder(args).Build().Run();
         }
