@@ -10,5 +10,10 @@ namespace dotnet_improvement.Infrastructure.Data
         }
 
         public DbSet<Product> Products { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Data Source=.;Initial Catalog=ProductsDb;Integrated Security=True");
+        }
     }
 }

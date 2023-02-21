@@ -9,9 +9,14 @@ namespace dotnet_improvement.Presentation
     {
         public static void Main(string[] args)
         {
-            HashSetTester.TestHashSet();
+            Program.Test();
 
             CreateHostBuilder(args).Build().Run();
+        }
+
+        public void Test()
+        {
+            Console.WriteLine("test()");
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
